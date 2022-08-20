@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export function getServerSideProps(context: GetServerSidePropsContext) {
     console.log(typeof context.req.headers, context.req.headers) // should be map or object?
+    // console.log('changed server code')
     return {
         props: {
             name: 'John Doe',
