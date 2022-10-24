@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.2.6-canary.1",
+    "next": "12.3.2-canary.38",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -17,7 +17,7 @@
     "@types/node": "^18.7.8",
     "@types/react": "^18.0.17",
     "eslint": "8.22.0",
-    "eslint-config-next": "12.2.5",
+    "eslint-config-next": "12.3.0",
     "typescript": "^4.7.4"
   }
 }
