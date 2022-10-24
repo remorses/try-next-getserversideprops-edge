@@ -4,7 +4,7 @@ const nextConfig = {
     experimental: {
         runtime: 'experimental-edge',
     },
-    
+
     swcMinify: true,
 }
 

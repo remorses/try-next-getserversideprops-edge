@@ -6,10 +6,17 @@ import styles from '../styles/Home.module.css'
 export function getServerSideProps(context: GetServerSidePropsContext) {
     // console.log(typeof context.req.headers, context.req.headers) // should be map or object?
     // console.log('changed server code')
-    console.log(typeof WritableStream)
+
+    console.log(
+        'res',
+        Object.getOwnPropertyNames(context.res),
+        typeof context.res,
+        context.res,
+    )
+
     return {
         props: {
-            name: 'John xx',
+            name: 'John',
             host: context.req.headers.host, // context.req.headers.get('host'),
         },
     }
