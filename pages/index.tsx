@@ -1,4 +1,5 @@
 import { GetServerSidePropsContext, PageConfig } from 'next/types'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -27,6 +28,8 @@ export const config: PageConfig = {
 }
 
 export default function Home({ name, host }) {
+    const router = useRouter()
+    console.log('router', router)
     return (
         <div className={styles.container}>
             <Head>
